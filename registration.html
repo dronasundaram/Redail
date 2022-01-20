@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form | RedSail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> 
+<!-- //Bootstrap CDN files -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- //Bootstrap CDN files -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body class="fullRegisterPage">
+	<!-- main -->
+	<div class="redsailLoginform wrapper">
+		<div class="main-redsailRegister">
+			<div class="redsailLoginBox">
+				<div class="redsail_logo pb-20">
+					<img src="img/logo-redsail-group.svg" alt="Redsail Logo">
+				</div>
+				<div class="regText pb-10">
+					<h2 class="formTitle text-left"> Complete Registration</h2>
+				</div>
+				<div class="loginRegistrationForm">
+					<div class="row">
+						<form action="#" method="post">
+							<div class="row">
+								<div class="col-md-6 pb-10">
+									<label>First Name <sup>*</sup></label>
+									<input class="customField" type="text" name="first_name" placeholder="Enter First Name" required="">
+								</div>
+								<div class="col-md-6 pb-10">
+									<label>Last Name <sup>*</sup></label>
+									<input class="customField" type="text" name="last_name" placeholder="Enter Last Name" required="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 pb-10">
+									<label>Title <sup>*</sup></label>
+									<input class="customField" type="text" name="title_field" placeholder="Enter Title Name" required="">
+								</div>
+								<div class="col-md-6 pb-10">
+									<label>Business Phone <sup>*</sup></label>
+									<input class="customField" type="text" name="business_phone" placeholder="Enter Business Phone" required="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 pb-10">
+									<label>Mobile Phone <sup>*</sup></label>
+									<input class="customField" type="text" name="mobile_phone" placeholder="Enter Mobile Phone" required="">
+								</div>
+								<div class="col-md-4 pb-10">
+									<label>FAX# <em>(optional)</em></label>
+									<input class="customField" type="text" name="fax_field" placeholder="Enter Fax">
+								</div>
+								<div class="col-md-3 pb-10">
+									<label>Zip Code <sup>*</sup></label>
+									<input class="customField" type="text" name="zip_code" id="zip_code" placeholder="Enter Zip Code" required="">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 pb-10">
+									<label>QS/1 System ID, Integra ID, or RAK# <sup>*</sup></label>
+									<select class="customField" name="qs_id" id="qs_id" required="">
+										<option value="" selected>Select any one ID</option>
+										<option value="QS/1"> QS/1</option>
+										<option value="Integra"> Integra </option>
+										<option value="RAK"> RAK</option>
+									  </select>
+								</div>
+								<div class="col-md-6 pb-10">
+									<label> Enter ID <sup>*</sup></label>
+									<input class="customField" type="text" name="Custom_Id" id="Custom_Id" placeholder="Enter QS/1, Integra ID, or RAK#" required="" disabled="disabled" />
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-md-6 pb-10">
+									<label>NABP, NPI and Email Domain <sup>*</sup></label>
+									<select class="customField" name="Nabpornpi_id" id="Nabpornpi_id" required="">
+										<option value="" selected>Select any one Number</option>
+										<option value="NABP"> NABP</option>
+										<option value="NPI"> NPI</option>
+										<option value="Email-Domain"> Email Domain</option>
+									  </select>
+								</div>
+								<div class="col-md-6 pb-10">
+									<label> Enter Details  <a class="infoTooltip emailTooltip" data-toggle="tooltip" title="Email domain matching the existing customer at the account. Email address not a free domain.">i</a><sup>*</sup></label>
+									<input class="customField" type="text" name="Custom_NumberorDomain" id="Custom_NumberorDomain" placeholder="Enter Details" required="" disabled="disabled" />
+								</div>
+								
+							</div>
+							<div class="row pt-20">
+								<div class="col-md-9">
+									<div class="registrationContent">
+										<ul>
+											<li>Once registered, only RedSail can change your email address on your record.</li>
+											<li>You can only signup for a single pharmacy location. If you need to be a member of Multiple pharmacy locations, contact your RedSail Hub customer admin or RedSail.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<input type="submit" value="Submit" id="register_Btn" class="loginBtn">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //main -->
+</body>
+<!-- //Bootstrap CDN files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- //Bootstrap CDN files -->
+<!-- For label tooltip info related script  -->
+<script>
+	$(document).ready(function () {
+        $("#qs_id").change(function () {
+            if ($(this).val() != 0) {
+                $("#Custom_Id").removeAttr("disabled");
+                $("#Custom_Id").focus();
+            } else {
+                $("#Custom_Id").attr("disabled", "disabled");
+            }
+        });
+		$("#Nabpornpi_id").change(function () {
+			var selectedValue = $(this).val()
+			if (selectedValue == "Email-Domain") {
+				$(".emailTooltip").css("display", "inline");
+				$(".emailTooltip").focus();
+			}else {
+				$(".emailTooltip").css("display", "none");
+			}
+            if (selectedValue.length != 0) {
+                $("#Custom_NumberorDomain").removeAttr("disabled");
+                $("#Custom_NumberorDomain").focus();
+            } else {
+                $("#Custom_NumberorDomain").attr("disabled", "disabled");
+            }
+        });
+		$('[data-toggle="tooltip"]').tooltip();
+
+    });
+
+</script>
+</html>

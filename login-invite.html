@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form | RedSail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> 
+<!-- //Bootstrap CDN files -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- //Bootstrap CDN files -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body class="fullLoginPage">
+	<!-- main -->
+	<div class="redsailLoginform wrapper">
+		<div class="main-redsailLogin">
+			<div class="redsailLoginBox">
+				<div class="redsail_logo pb-30">
+					<img src="img/logo-redsail-group.svg" alt="Redsail Logo">
+				</div>
+				<div class="regText pb-30">
+					<h2 class="formTitle"> Welcome to the RedSail Hub!</h2>
+				</div>
+				<div class="loginRegistrationForm">
+					<div class="row">
+						<form action="#" method="post">
+							<div class="col-md-12 pb-10">
+								<label>Please enter your e-mail address <a class="infoTooltip" data-toggle="tooltip" tabindex="0" title="Please enter your business email address">i</a> <sup>*</sup></label>
+								<input class="emailField  is-invalid" type="email" name="email" placeholder="Enter your e-mail" required="">
+								<div id="validationServerUsernameFeedback" class="invalid-feedback">
+									Please choose a username.
+								  </div>
+							</div>
+							<div class="col-md-12 pb-10">
+								<label>Confirm e-mail address <a class="infoTooltip" data-toggle="tooltip" tabindex="0" title="Please enter Confirm email address - no copy/paste">i</a> <sup>*</sup></label>
+								<input class="emailField" type="email" name="email" placeholder="Confirm e-mail" required="">
+							</div>
+							<div class="col-md-12">
+								<div class="invitation">
+									<p>We have sent invitation link earlier do you need new invite?</p>
+								</div>
+							</div>
+							<div class="col-md-12 pt-20 pull-right">
+								<div class="invitebtn">
+									<input type="submit" value="Yes" class="yesBtn">
+								    <input type="submit" value="No" class="noBtn">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //main -->
+</body>
+<!-- //Bootstrap CDN files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- //Bootstrap CDN files -->
+<!-- For label tooltip info related script  -->
+<script>
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+</html>

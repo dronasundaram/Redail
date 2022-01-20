@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form | RedSail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> 
+<!-- //Bootstrap CDN files -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- //Bootstrap CDN files -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body class="fullLoginPage">
+	<!-- main -->
+	<div class="redsailLoginform wrapper">
+		<div class="main-redsailLogin">
+			<div class="redsailLoginBox">
+				<div class="redsail_logo pb-20">
+					<img src="img/logo-redsail-group.svg" alt="Redsail Logo">
+				</div>
+				<div class="regText pb-10 text-left">
+					<h2 class="formTitle"> RedSail Hub Self-registration</h2>
+					<p>
+						You must be an existing RedSail Technologies customer to complete the self-registration process. 
+					</p>
+				</div>
+				<div class="loginRegistrationForm">
+					<div class="row">
+						<form action="#" method="post">
+							<div class="col-md-12 pb-10">
+								<label>Enter email <a class="infoTooltip" data-toggle="tooltip" tabindex="0" title="Please enter your business email address">i</a> <sup>*</sup></label>
+								<input class="emailField" type="email" name="validEmail" id="validEmail" placeholder="Enter email" autofocus />
+                                 <!-- just add this tag we have a required msg -->
+                                <p class="errorMsg">Please enter a valid email address</p>
+							</div>
+							<div class="col-md-12 pb-20">
+								<label>Confirm email <a class="infoTooltip" data-toggle="tooltip" tabindex="0" title="Please enter Confirm email address - no copy/paste">i</a> <sup>*</sup></label>
+								<input class="emailField" type="email" name="email" id="confirmEmail" placeholder="Confirm email" autofocus />
+                                <!-- just add this tag we have a required msg -->
+                                <p class="errorMsg">Confirmation email doesn't match</p>
+							</div>
+							<div class="col-md-12 pt-20">
+								<button type="submit" class="loginBtn" id="loginBtn" value="Submit">Login <img src="img/signin-icon.svg" alt="Login icon" /></button>
+							</div>
+							<div class="col-md-12 pt-20">
+								<div class="regText">
+									<p><sup>*</sup>During the registration process, you will need to provide information about yourself and your business, so we can uniquely identify you.</p>
+								  </div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //main -->
+</body>
+<!-- //Bootstrap CDN files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- //Bootstrap CDN files -->
+<!-- For label tooltip info related script  -->
+<script>
+	$(document).ready(function () {
+		// Don't copy past confirm email
+		$('#confirmEmail').bind('copy paste cut',function(e) {
+  			e.preventDefault();
+		});
+		$('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</html>
